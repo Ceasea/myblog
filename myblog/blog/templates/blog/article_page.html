@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Page</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/blog.css' %}" >
+</head>
+<body>
+<div id="article_title">
+    <h1 color="red">{{article.title}}</h1>
+</div>
+<div id="article_time">
+    <h3 color="gray">{{article.pub_time}}</h3>
+</div>
+<div id="article_content">
+    <pre>{{article.content}}</pre>
+</div>
+</body>
+</html>
